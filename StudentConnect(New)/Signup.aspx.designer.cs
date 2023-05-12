@@ -78,15 +78,6 @@ namespace StudentConnect_New_
         protected global::System.Web.UI.WebControls.DropDownList UniversityList;
 
         /// <summary>
-        /// QualificatioList control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList QualificatioList;
-
-        /// <summary>
         /// AccommodationNametxt control.
         /// </summary>
         /// <remarks>

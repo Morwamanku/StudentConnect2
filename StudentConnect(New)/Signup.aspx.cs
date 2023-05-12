@@ -88,10 +88,10 @@ namespace StudentConnect_New_
                 cmd.Parameters.AddWithValue("@image", filepath);
 
                 SqlCommand cmd2 = new SqlCommand("INSERT INTO University(UniversityName) values(@UniversityName)", con);
-                cmd.Parameters.AddWithValue("UniversityName", UniversityList.Text.Trim());
+                cmd2.Parameters.AddWithValue("UniversityName", UniversityList.Text.Trim());
 
                 SqlCommand cmd3 = new SqlCommand("INSERT INTO Accommodation(AccommodationName) values(@AccommodationName)", con);
-                cmd.Parameters.AddWithValue("@AccommodationName", AccommodationNametxt.Text.Trim());
+                cmd3.Parameters.AddWithValue("@AccommodationName", AccommodationNametxt.Text.Trim());
                 
 
                 cmd.ExecuteNonQuery();

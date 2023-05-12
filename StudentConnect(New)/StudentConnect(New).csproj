@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="404-tick.png" />
     <Content Include="BlockedStyle.css" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
@@ -92,7 +93,9 @@
     <Content Include="ProfileImage\slayer.jpg" />
     <Content Include="ProfileImage\WeddingPhoto.jpg" />
     <Content Include="ProfileImage\WhatsApp Image 2023-02-18 at 12.36.25.jpg" />
+    <Content Include="ProfileResponsiveStyle.css" />
     <Content Include="Profilestyle.css" />
+    <Content Include="RequestStyle.css" />
     <Content Include="Signup.aspx" />
     <Content Include="Signupcss\Signupstyle.css" />
     <Content Include="Signupimages\BackG.jpeg" />
@@ -102,11 +105,18 @@
     <Content Include="Signupimages\signup-image.jpg" />
     <Content Include="Signupjs\main.js" />
     <Content Include="Style.css" />
+    <Content Include="ViewProfileStyle.css" />
     <Content Include="Web.config" />
     <Content Include="Dashboard.aspx" />
     <Content Include="Profile.aspx" />
     <Content Include="Connections.aspx" />
     <Content Include="Blocked.aspx" />
+    <Content Include="ProfilePage.aspx" />
+    <Content Include="ViewProfile.aspx" />
+    <Content Include="WebForm1Style.css" />
+    <Content Include="WebForm7.aspx" />
+    <Content Include="Request.aspx" />
+    <Content Include="WebForm9.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EditPage.aspx.cs">
@@ -173,6 +183,41 @@
     <Compile Include="Blocked.aspx.designer.cs">
       <DependentUpon>Blocked.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ProfilePage.aspx.cs">
+      <DependentUpon>ProfilePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProfilePage.aspx.designer.cs">
+      <DependentUpon>ProfilePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewProfile.aspx.cs">
+      <DependentUpon>ViewProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewProfile.aspx.designer.cs">
+      <DependentUpon>ViewProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm7.aspx.cs">
+      <DependentUpon>WebForm7.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm7.aspx.designer.cs">
+      <DependentUpon>WebForm7.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Request.aspx.cs">
+      <DependentUpon>Request.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Request.aspx.designer.cs">
+      <DependentUpon>Request.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm9.aspx.cs">
+      <DependentUpon>WebForm9.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm9.aspx.designer.cs">
+      <DependentUpon>WebForm9.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-grid.css.map" />
@@ -184,6 +229,14 @@
     <None Include="packages.config" />
     <Content Include="Site1.Master" />
     <Content Include="Signupcss\style.css.map" />
+    <Content Include="scss\common\extend.scss" />
+    <Content Include="scss\common\fonts.scss" />
+    <Content Include="scss\common\global.scss" />
+    <Content Include="scss\common\minxi.scss" />
+    <Content Include="scss\common\variables.scss" />
+    <Content Include="scss\layouts\main.scss" />
+    <Content Include="scss\layouts\responsive.scss" />
+    <Content Include="scss\style.scss" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -8,10 +8,17 @@
                 <img src="ProfileImage/WeddingPhoto.jpg"/>   
             </div>
             <div class="Profile_image">
-                    <img src="ProfileImage/Pholly.jpg" width="50" />
+                    <asp:FormView ID="FormView1" runat="server">
+                   <ItemTemplate>     
+                        <asp:Image  class="img-fluid" ID="Image1"  runat="server" ImageUrl='<%# Eval("image") %>' />
+                    </ItemTemplate>
+                   </asp:FormView>
                     
            </div>
-            <div class="circle"><a href="Dashboard.aspx"><img src="Images/camera-symbol-icon-25.png" /></a></div>
+            <div class="circle">
+                <a href="Dashboard.aspx"><img src="Images/camera-symbol-icon-25.png" /></a>
+                
+            </div>
             
             <h1>Phogole Thobejane</h1> 
             <p>Connections 30</p> 

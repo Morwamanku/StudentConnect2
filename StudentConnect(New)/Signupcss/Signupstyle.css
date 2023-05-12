@@ -220,13 +220,13 @@ h2 {
 }
 
 body {
-    background-image: url(pexels-aleksandar-pasaric-4505907.jpg);
+    background-image: url(../pexels-aleksandar-pasaric-4505907.jpg);
     font-size: 13px;
     line-height: 1.8;
     color: #222;
-    background: #f8f8f8;
     font-weight: 400;
     font-family: Poppins;
+    background:#fff
 }
 
 .container {
@@ -271,6 +271,8 @@ body {
     -o-align-items: center;
     -ms-align-items: center;
 }
+
+
 
 .position-center {
     position: absolute;
@@ -335,6 +337,7 @@ figure {
 
 #signin {
     margin-top: 16px;
+        
 }
 
 .signup-image-link {
@@ -377,6 +380,16 @@ figure {
     }
 
 input {
+    width: 100%;
+    display: block;
+    border: none;
+    border-bottom: 1px solid #999;
+    padding: 6px 30px;
+    font-family: Poppins;
+    box-sizing: border-box;
+}
+
+select {
     width: 100%;
     display: block;
     border: none;

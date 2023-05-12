@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css"/>
 
     <!-- Main css -->
-    <link href="Signupcss/style.css" rel="stylesheet" />
+    <link href="Signupcss/Signupstyle.css" rel="stylesheet" />
+    
     <title>Login</title>
 </head>
 <body>

@@ -6,7 +6,7 @@
 <head runat="server">
     <!-- Font Icon -->
     <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css"/>
-
+             
     <!-- Main css -->
     <link href="Signupcss/Signupstyle.css" rel="stylesheet" />
     <title>Sign up</title>
@@ -34,16 +34,17 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="studentnumber"><i class="zmdi zmdi-account material-icons-name"></i></label>
-                                <asp:TextBox ID="studentnumbertxt" placeholder="Student Number" runat="server"></asp:TextBox>
+                                <asp:TextBox  ID="studentnumbertxt" placeholder="Student Number" runat="server"></asp:TextBox>
                                 </div>
                                 <div class="form-group">
                                     <label for="Gender"><i class="zmdi zmdi-account material-icons-name"></i></label>
-                                <asp:DropDownList ID="GenderList" runat="server">
-                                    <asp:ListItem Value="Male" >Male</asp:ListItem>    
-                                    <asp:ListItem Value="Female">Female</asp:ListItem> 
-                                 </asp:DropDownList> 
-
-                                </div>
+               
+                                        <asp:DropDownList  ID="GenderList" runat="server">
+                                            <asp:ListItem Value="Male" >Male</asp:ListItem>    
+                                            <asp:ListItem Value="Female">Female</asp:ListItem> 
+                                        </asp:DropDownList> 
+                                    </div>
+                                
                                 <div class="form-group">
                                     <label for="Hometown"><i class="zmdi zmdi-account material-icons-name"></i></label>
                                 <asp:DropDownList ID="HometownList" runat="server">
@@ -60,14 +61,7 @@
                                     <asp:ListItem Value="Bcom Law">Bcom Law</asp:ListItem>
                                  </asp:DropDownList>  
                                 </div>
-                                <div class="form-group">
-                                    <label for="QualificationName"><i class="zmdi zmdi-account material-icons-name"></i></label>
-                                <asp:DropDownList ID="QualificatioList" runat="server">
-                                    <asp:ListItem Value="Bcom Information Systems" >Bcom Information Systems</asp:ListItem>    
-                                    <asp:ListItem Value="Bcom Accounting">Bcom Accounting </asp:ListItem>
-                                    <asp:ListItem Value="Bcom Law">Bcom Law</asp:ListItem>
-                                 </asp:DropDownList>  
-                                </div>
+                                
                                 <div class="form-group">
                                     <label for="AccommodationName"><i></i></label>
                                     <asp:DropDownList ID="AccommodationNametxt" runat="server">
@@ -76,6 +70,7 @@
                                         <asp:ListItem Value="Student Dicks">Student Dicks</asp:ListItem>
                                      </asp:DropDownList> 
                                 </div>
+                                
                                 <div class="form-group">
                                     <label for="Image"><i></i></label>
                                 <asp:FileUpload ID="FileUpload1" runat="server" />

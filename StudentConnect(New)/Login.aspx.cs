@@ -20,6 +20,9 @@ namespace StudentConnect_New_
 
         protected void BtnLogIn_Click(object sender, EventArgs e)
         {
+            string StudentNumber=studentnumbertxt.Text;
+            Session["studentnumber"] = StudentNumber;
+
             // user login
             try
             {

@@ -1,5 +1,6 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Connections.aspx.cs" Inherits="StudentConnect_New_.WebForm4" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Request.aspx.cs" Inherits="StudentConnect_New_.WebForm8" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <link href="Style.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="cardbox">
@@ -21,12 +22,13 @@
                         </div>
                         <div class="course">Computer science</div>
                         <div class="buttons">
-                            <asp:Button class="Addbtn" ID="Messagebutton" runat="server" Text="Message" />
+                            <asp:Button class="Addbtn" ID="Confirmbutton" runat="server" Text="Connect" OnClick="Confirmbutton_Click" />
                         </div>
                     </div>
                 </div>
             
         </ItemTemplate>
     </asp:Repeater>
+        
         </div>
 </asp:Content>

@@ -11,16 +11,16 @@ namespace StudentConnect_New_
 {
 
 
-    public partial class WebForm2
+    public partial class WebForm7
     {
 
         /// <summary>
-        /// FormView1 control.
+        /// Form1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.FormView FormView1;
+        protected global::System.Web.UI.HtmlControls.HtmlForm Form1;
     }
 }

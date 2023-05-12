@@ -17,7 +17,7 @@ namespace StudentConnect_New_
 
             if (!IsPostBack)
             {
-                string query = string.Format("select StudentNumber,Firstname,image from Student");
+                string query = string.Format("select ConnectedStudent.image, ConnectedStudent.StudentNumber, ConnectedStudent.Firstname, ConnectedStudent.Surname from ConnectionConfirmed left join ConnectedStudent on ConnectionConfirmed.ConnectedStudentNumber = ConnectedStudent.StudentNumber where ConnectionConfirmed.StudentNumber= '" + (string)Session["studentnumber"] + "' or ConnectionConfirmed.ConnectedStudentNumber='" + (string)Session["studentnumber"] + "'");
 
                 SqlConnection con = new SqlConnection(strcon);
                 SqlCommand cmd = new SqlCommand(query, con);
@@ -32,3 +32,4 @@ namespace StudentConnect_New_
         }
     }
 }
+

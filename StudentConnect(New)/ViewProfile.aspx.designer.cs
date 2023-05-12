@@ -11,7 +11,7 @@ namespace StudentConnect_New_
 {
 
 
-    public partial class WebForm2
+    public partial class WebForm6
     {
 
         /// <summary>

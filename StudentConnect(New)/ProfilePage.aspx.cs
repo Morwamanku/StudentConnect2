@@ -9,15 +9,14 @@ using System.Web.UI.WebControls;
 
 namespace StudentConnect_New_
 {
-    public partial class Site1 : System.Web.UI.MasterPage
+    public partial class WebForm3 : System.Web.UI.Page
     {
         string strcon = ConfigurationManager.ConnectionStrings["con"].ConnectionString;
         protected void Page_Load(object sender, EventArgs e)
         {
-
             if (!IsPostBack)
             {
-                string query = string.Format("select image from Student WHERE StudentNumber ='" + (string)Session["studentnumber"] + "'");
+                string query = string.Format("select StudentNumber,Firstname,Surname,image from Student Where StudentNumber ='" + (string)Session["studentnumber"] + "'");
 
                 SqlConnection con = new SqlConnection(strcon);
                 SqlCommand cmd = new SqlCommand(query, con);
@@ -28,17 +27,6 @@ namespace StudentConnect_New_
                 FormView1.DataBind();
                 con.Close();
             }
-        }
-
-        protected void FormView1_PageIndexChanging(object sender, FormViewPageEventArgs e)
-        {
-
-        }
-
-        protected void ImageButton1_Click(object sender, ImageClickEventArgs e)
-        {
-            
-            Response.Redirect("ProfilePage.aspx");
         }
     }
 }
