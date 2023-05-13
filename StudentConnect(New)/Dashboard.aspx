@@ -1,15 +1,92 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Dashboard.aspx.cs" Inherits="StudentConnect_New_.WebForm1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <script>
+        window.addEventListener("load", () => {
+            const loader = document.querySelector(".loader");
+
+            loader.classList.add("loader--hidden");
+
+            loader.addEventListener("transitionend", () => {
+                document.body.removeChild(loader);
+            });
+        });
+
+    </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    
+    <style>
+ div.scrollmenu {
+     margin-top:20px;
+    overflow: hidden;
+    height: 150px;
+    width: 90%;
+    white-space: nowrap;
+    margin-left: 58px;
+}
+
+ div.scrollmenu img{
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        object-fit:cover;
+ }
+
+ .loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(pexels-aleksandar-pasaric-4505907.jpg);
+  transition: opacity 2s, visibility 2s;
+}
+
+.loader--hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loader::after {
+  content: "";
+  width: 75px;
+  height: 75px;
+  border: 15px solid #dddddd;
+  border-top-color: #009578;
+  border-radius: 50%;
+  animation: loading 2s ease infinite;
+}
+
+@keyframes loading {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+
+</style>
+
+    <div class="loader"></div>
+
+    <div class = "scrollmenu">
+        <img src="advert.jpeg" />
+    </div>
+ 
     <div class="cardbox">
         <asp:Repeater ID="DashboardRepeater" runat="server" OnItemCommand="DashboardRepeater_ItemCommand">
         <ItemTemplate>
             
                 <div class="card">
+      
                     <div class=back-card>
                         <img src="pexels-aleksandar-pasaric-4505907.jpg" />
+                        <span class="icon"><ion-icon name="close-outline"></ion-icon></span>
                     </div>
                     <div class="carddetails">
                         <div class="image">
@@ -37,6 +114,8 @@
           </ItemTemplate>
       </asp:Repeater>
      </div>
+
+    
 </asp:Content>
 
 

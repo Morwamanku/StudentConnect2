@@ -36,7 +36,7 @@
                                     </div>
 
                                     <div class="secondary">
-                                        <h1>Course <br> Museum</h1>
+                                        <h1>Course </h1>
                                         <span>Secondary</span>
                                         <p>Bcom Information Systems</p>
                                     </div>
@@ -55,6 +55,7 @@
                             </section>
 
 
+                            
                             <!-- ===== ===== User Details Sections ===== ===== -->
                             <section class="userDetails card">
                                 <div class="userName">
@@ -66,7 +67,7 @@
                                     <p>Product Designer</p>
                                 </div>
 
-                                <div class="rank">
+                                <%--<div class="rank">
                                     <h1 class="heading">Rankings</h1>
                                     <span>8,6</span>
                                     <div class="rating">
@@ -76,7 +77,7 @@
                                         <i class="ri-star-fill rate"></i>
                                         <i class="ri-star-fill rate underrate"></i>
                                     </div>
-                                </div>
+                                </div>--%>
 
                                 <div class="btns">
                                     <ul>
@@ -102,10 +103,7 @@
                             <section class="timeline_about card">
                                 <div class="tabs">
                                     <ul>
-                                        <li class="timeline">
-                                            <i class="ri-eye-fill ri"></i>
-                                            <span>Timeline</span>
-                                        </li>
+                                       
 
                                         <li class="about active">
                                             <i class="ri-user-3-fill ri"></i>
@@ -118,18 +116,19 @@
                                     <h1 class="heading">Contact Information</h1>
                                     <ul>
                                         <li class="phone">
-                                            <h1 class="label">Phone:</h1>
-                                            <span class="info">+11 234 567 890</span>
+                                            <h1 class="label">Gender</h1>
+                                            <span class="info"><asp:Label ID="GenderLabel1" runat="server" Text='<%# Eval("Gender") %>'></asp:Label></span>
                                         </li>
 
                                         <li class="address">
-                                            <h1 class="label">Address:</h1>
-                                            <span class="info">S34 E 65th Street <br> New York, NY 10651-78 156-187-60</span>
+                                            <h1 class="label">Hometown</h1>
+                                            
+                                            <span class="info"><asp:Label ID="HometownLabel" runat="server" Text='<%# Eval("Hometown") %>'></asp:Label></span>
                                         </li>
 
                                         <li class="email">
-                                            <h1 class="label">E-mail:</h1>
-                                            <span class="info">hello@rsmarquetech.com</span>
+                                            <h1 class="label">Year of study</h1>
+                                            <span class="info">3rd year</span>
                                         </li>
 
                                         <li class="site">

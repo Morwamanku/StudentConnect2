@@ -334,6 +334,7 @@ header {
     .userDetails .btns ul li {
         display: flex;
         align-items: center;
+        margin-top:120px;
     }
 
         .userDetails .btns ul li {

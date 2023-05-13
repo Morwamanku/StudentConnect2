@@ -17,7 +17,7 @@ namespace StudentConnect_New_
         {
             if (!IsPostBack)
             {
-                string query = string.Format("select StudentNumber,Firstname,Surname,image from Student Where StudentNumber ='" + (string)Session["profilestudentnumber"] + "'");
+                string query = string.Format("select StudentNumber,Firstname,Surname,Gender,Hometown,image from Student Where StudentNumber ='" + (string)Session["profilestudentnumber"] + "'");
 
                 SqlConnection con = new SqlConnection(strcon);
                 SqlCommand cmd = new SqlCommand(query, con);

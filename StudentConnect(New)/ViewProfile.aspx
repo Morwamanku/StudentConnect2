@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="ViewProfile.aspx.cs" Inherits="StudentConnect_New_.WebForm6" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link href="ViewProfileStyle.css" rel="stylesheet" />
-    <link href="Style.css" rel="stylesheet" />
+    
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <asp:FormView ID="FormView1" runat="server">
@@ -29,15 +29,15 @@
                                 <div class="work">
                                     <h1 class="heading">work</h1>
                                     <div class="primary">
-                                        <h1>Spotify New York</h1>
+                                        <h1>Institution</h1>
                                         <span>Primary</span>
-                                        <p>170 William Street <br> New York, NY 10038-212-315-51</p>
+                                        <p>University of Johannesburg</p>
                                     </div>
 
                                     <div class="secondary">
-                                        <h1>Metropolitan <br> Museum</h1>
+                                        <h1>Student Number</h1>
                                         <span>Secondary</span>
-                                        <p>S34 E 65th Street <br> New York, NY 10651-78 156-187-60</p>
+                                        <p>22345678</p>
                                     </div>
                                 </div>
 
@@ -65,7 +65,7 @@
                                     <p>Product Designer</p>
                                 </div>
 
-                                <div class="rank">
+                                <%--<div class="rank">
                                     <h1 class="heading">Rankings</h1>
                                     <span>8,6</span>
                                     <div class="rating">
@@ -75,7 +75,7 @@
                                         <i class="ri-star-fill rate"></i>
                                         <i class="ri-star-fill rate underrate"></i>
                                     </div>
-                                </div>
+                                </div>--%>
 
                                 <div class="btns">
                                     <ul>
@@ -101,11 +101,6 @@
                             <section class="timeline_about card">
                                 <div class="tabs">
                                     <ul>
-                                        <li class="timeline">
-                                            <i class="ri-eye-fill ri"></i>
-                                            <span>Timeline</span>
-                                        </li>
-
                                         <li class="about active">
                                             <i class="ri-user-3-fill ri"></i>
                                             <span>About</span>
@@ -114,21 +109,22 @@
                                 </div>
 
                                 <div class="contact_Info">
-                                    <h1 class="heading">Contact Information</h1>
+                               
                                     <ul>
                                         <li class="phone">
-                                            <h1 class="label">Phone:</h1>
-                                            <span class="info">+11 234 567 890</span>
+                                            <h1 class="label">Gender</h1>
+                                            <span class="info"><asp:Label ID="GenderLabel1" runat="server" Text='<%# Eval("Gender") %>'></asp:Label></span>
                                         </li>
 
                                         <li class="address">
-                                            <h1 class="label">Address:</h1>
-                                            <span class="info">S34 E 65th Street <br> New York, NY 10651-78 156-187-60</span>
+                                            <h1 class="label">Hometown</h1>
+                                            
+                                            <span class="info"><asp:Label ID="HometownLabel" runat="server" Text='<%# Eval("Hometown") %>'></asp:Label></span>
                                         </li>
 
                                         <li class="email">
-                                            <h1 class="label">E-mail:</h1>
-                                            <span class="info">hello@rsmarquetech.com</span>
+                                            <h1 class="label">Year of study</h1>
+                                            <span class="info">2nd year</span>
                                         </li>
 
                                         <li class="site">

@@ -11,7 +11,7 @@ namespace StudentConnect_New_
 {
 
 
-    public partial class WebForm9
+    public partial class EditProfile
     {
 
         /// <summary>

@@ -32,7 +32,7 @@ namespace StudentConnect_New_
             }
         }
 
-        protected void Confirmbutton_Click(object sender, EventArgs e)
+        protected void Confirmbutton_Click(object sender, EventArgs e) 
         {
             Button btn = (Button)sender;
             RepeaterItem item = (RepeaterItem)btn.NamingContainer;
@@ -44,44 +44,24 @@ namespace StudentConnect_New_
                 {
                     con.Open();
                 }
-                string query = string.Format("INSERT INTO ConnectionConfirmed SELECT StudentNumber, ConnectedStudentNumber FROM ConnectRequests WHERE StudentNumber='" + (string)Session["studentnumber"] + "' and ConnectedStudentNumber='" + ((Label)item.FindControl("StudentNumberLabel")).Text + "' DELETE FROM ConnectRequests  WHERE StudentNumber ='" + (string)Session["studentnumber"] + "' and ConnectedStudentNumber = '" + ((Label)item.FindControl("StudentNumberLabel")).Text + "' ");
-                SqlCommand cmd = new SqlCommand(query, con);
-                
+                //string query = string.Format("INSERT INTO ConnectionConfirmed SELECT StudentNumber, ConnectedStudentNumber FROM ConnectRequests WHERE StudentNumber='" + (string)Session["studentnumber"] + "' and ConnectedStudentNumber='" + ((Label)item.FindControl("StudentNumberLabel")).Text + "'  DELETE FROM ConnectRequests  WHERE StudentNumber ='" + (string)Session["studentnumber"] + "' and ConnectedStudentNumber = '" + ((Label)item.FindControl("StudentNumberLabel")).Text + "' ");
+                //SqlCommand cmd = new SqlCommand(query, con);
+                SqlCommand cmd = new SqlCommand("INSERT INTO ConnectionConfirmed(StudentNumber,ConnectedStudentNumber) values(@StudentNumber,@ConnectedStudentNumber) ", con);
+                cmd.Parameters.AddWithValue("@ConnectedStudentNumber", ((Label)item.FindControl("StudentNumberLabel")).Text);
+                cmd.Parameters.AddWithValue("@StudentNumber", (string)Session["studentnumber"]);
+                SqlCommand cmd2 = new SqlCommand("DELETE FROM ConnectRequests  WHERE StudentNumber =@StudentNumber and ConnectedStudentNumber = @ConnectedStudentNumber", con);
+                cmd2.Parameters.AddWithValue("@ConnectedStudentNumber", ((Label)item.FindControl("StudentNumberLabel")).Text);
+                cmd2.Parameters.AddWithValue("@StudentNumber", (string)Session["studentnumber"]);
 
-        ;
-                SqlDataReader reader = cmd.ExecuteReader();
-                
-                ConnectionRepeater.DataSource = reader;
-                ConnectionRepeater.DataBind();
+                cmd.ExecuteNonQuery();
+                cmd2.ExecuteNonQuery();
                 con.Close();
-
-                Response.Write("<script>alert('Request Made');</script>");
+                Response.Write("<script>alert('Student Accepted');</script>");
             }
             catch (Exception ex)
             {
                 Response.Write("<script>alert('" + ex.Message + "');</script>");
             }
-
-
-            //try
-            //{
-
-            //    SqlConnection con = new SqlConnection(strcon);
-            //    if (con.State == ConnectionState.Closed)
-            //    {
-            //        con.Open();
-            //    }
-
-            //    string query2 = string.Format("DELETE FROM ConnectRequests  WHERE StudentNumber ='" + (string)Session["studentnumber"] + "' and ConnectedStudentNumber = '" + ((Label)item.FindControl("StudentNumberLabel")).Text + "'");
-            //    SqlCommand cmd2 = new SqlCommand(query2, con);
-            //    cmd2.ExecuteNonQuery();
-            //    con.Close();
-
-            //}
-            //catch (Exception ex)
-            //{
-            //    Response.Write("<script>alert('" + ex.Message + "');</script>");
-            //}
 
         }
     }

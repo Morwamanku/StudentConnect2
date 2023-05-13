@@ -24,14 +24,14 @@ body{
     width:100%; 
 }
 
-.navigation{
-    position:fixed;
-    width:300px;
-    height:100%;
-    background:var(--blue);
-    border-left:10px solid var(--blue);
-    transition:0.5s;
-    overflow:hidden;
+.navigation {
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    background: #B1797A;
+    border-left: 10px solid #B1797A;
+    transition: 0.5s;
+    overflow: hidden;
 }
 
 .navigation.active{
@@ -282,21 +282,19 @@ body{
 
 .numbers {
     font-weight: 500;
-    color: var(--blue);
+    color:transparent;
     padding-left: 10px
 }
 
 .name {
     font-weight: 500;
-    color: var(--blue);
-    padding-left:10px;
-    
-  
+    color: #907175;
+    padding-left: 10px;
 }
 
 .course {
     font-weight: 500;
-    color: var(--blue);
+    color: #907175;
     padding-left: 10px
 }
 
@@ -425,6 +423,24 @@ body{
         border-radius: 4px;
         cursor: pointer;
         box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+.card .icon {
+    position: absolute;
+    display: block;
+    height: 20px;
+    text-align: center;
+    color: black;
+    margin-left: 182px;
+    margin-top: 6px;
+    background: aliceblue;
+    border: 15px;
+    border-radius: 50px;
+    width: 20px;
+}
+
+    .card .icon ion-icon {
+        font-size: 20px;
     }
 
 
