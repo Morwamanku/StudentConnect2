@@ -111,6 +111,7 @@
     <Content Include="Signupimages\signup-image.jpg" />
     <Content Include="Signupjs\main.js" />
     <Content Include="Style.css" />
+    <Content Include="UploadImage.aspx" />
     <Content Include="ViewProfileStyle.css" />
     <Content Include="Web.config" />
     <Content Include="Dashboard.aspx" />
@@ -120,7 +121,6 @@
     <Content Include="ProfilePage.aspx" />
     <Content Include="ViewProfile.aspx" />
     <Content Include="WebForm1Style.css" />
-    <Content Include="WebForm7.aspx" />
     <Content Include="Request.aspx" />
   </ItemGroup>
   <ItemGroup>
@@ -209,19 +209,19 @@
     <Compile Include="ProfilePage.aspx.designer.cs">
       <DependentUpon>ProfilePage.aspx</DependentUpon>
     </Compile>
+    <Compile Include="UploadImage.aspx.cs">
+      <DependentUpon>UploadImage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UploadImage.aspx.designer.cs">
+      <DependentUpon>UploadImage.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ViewProfile.aspx.cs">
       <DependentUpon>ViewProfile.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="ViewProfile.aspx.designer.cs">
       <DependentUpon>ViewProfile.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="WebForm7.aspx.cs">
-      <DependentUpon>WebForm7.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="WebForm7.aspx.designer.cs">
-      <DependentUpon>WebForm7.aspx</DependentUpon>
     </Compile>
     <Compile Include="Request.aspx.cs">
       <DependentUpon>Request.aspx</DependentUpon>

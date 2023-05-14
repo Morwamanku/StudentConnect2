@@ -57,12 +57,14 @@
                             <!-- ===== ===== User Details Sections ===== ===== -->
                             <section class="userDetails card">
                                 <div class="userName">
-                                    <h1 class="name"><asp:Label ID="FirstnameLabel" runat="server" Text='<%# Eval("Firstname") %>'></asp:Label> <asp:Label ID="SurnameLabel1" runat="server" Text='<%# Eval("Surname") %>'></asp:Label></h1>
+                                    <h1 ><asp:Label ID="FirstnameLabel" runat="server" Text='<%# Eval("Firstname") %>'></asp:Label> </h1>
+
+                                      <h1><asp:Label ID="SurnameLabel1" runat="server" Text='<%# Eval("Surname") %>'></asp:Label></h1>
                                     <div class="map">
                                         <i class="ri-map-pin-fill ri"></i>
                                         
                                     </div>
-                                    <p>Product Designer</p>
+                                    <p>Computer Sciene</p>
                                 </div>
 
                                 <%--<div class="rank">

@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace StudentConnect_New_
 {
-    public partial class WebForm7 : System.Web.UI.Page
+    public partial class UploadImage : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

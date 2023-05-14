@@ -13,7 +13,6 @@ namespace StudentConnect_New_
     {
         string strcon = ConfigurationManager.ConnectionStrings["con"].ConnectionString;
         protected void Page_Load(object sender, EventArgs e)
-
         {
             if (!IsPostBack)
             {

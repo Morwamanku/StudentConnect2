@@ -164,6 +164,11 @@ header {
         border-radius: 50%;
     }
 
+
+    .Profile-container .userProfile h1{
+        font-size: 30px;
+        color:orange;
+    }
 /* ===== =====>>  Work & Skills Css Start  <<===== ===== */
 .Profile-container .work_skills {
     padding: var(--p-1-5);
@@ -242,7 +247,7 @@ header {
         height: 0.2rem;
         background: var(--bg3-color);
         animation: skills 8s linear infinite;
-        animation-delay: calc(-2s * var(--i));
+       /* animation-delay: calc(-2s * var(--i));*/
     }
 
 @keyframes skills {
@@ -267,7 +272,7 @@ header {
     padding: var(--p-1-5) var(--p-2-5);
 }
 
-    .userDetails .userName h1 {
+    .userDetails .userName h1 .FirstnameLabel {
         font-size: var(--xxxl-fs);
     }
 
@@ -292,7 +297,7 @@ header {
         }
 
     .userDetails .userName p {
-        font-size: var(--m-fs);
+        font-size: 22px;
         font-weight: 700;
         color: var(--f5-color);
         margin-bottom: var(--m-1-8);
