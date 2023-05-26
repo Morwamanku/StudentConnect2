@@ -71,6 +71,8 @@
     <Content Include="BlockedStyle.css" />
     <Content Include="Blog.aspx" />
     <Content Include="BlogStyle.css" />
+    <Content Include="Chat.aspx" />
+    <Content Include="ChatStyle.css" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
     <Content Include="Content\bootstrap-reboot.css" />
@@ -87,6 +89,8 @@
     <Content Include="Js\popper.min.js" />
     <Content Include="Login.aspx" />
     <Content Include="Message.aspx" />
+    <Content Include="MessageStyle.css" />
+    <Content Include="Notificationstyle.css" />
     <Content Include="pexels-aleksandar-pasaric-4505907.jpg" />
     <Content Include="pexels-alexander-kovalev-2847648.jpg" />
     <Content Include="ProfileImage\boity.jpg" />
@@ -103,7 +107,6 @@
     <Content Include="ProfileResponsiveStyle.css" />
     <Content Include="Profilestyle.css" />
     <Content Include="RequestStyle.css" />
-    <Content Include="Settings.aspx" />
     <Content Include="SettingsStyle.css" />
     <Content Include="Signup.aspx" />
     <Content Include="Signupcss\Signupstyle.css" />
@@ -113,7 +116,9 @@
     <Content Include="Signupimages\signin-image.jpg" />
     <Content Include="Signupimages\signup-image.jpg" />
     <Content Include="Signupjs\main.js" />
+    <Content Include="SPage.css" />
     <Content Include="Style.css" />
+    <Content Include="Setting.aspx" />
     <Content Include="UploadImage.aspx" />
     <Content Include="ViewProfileStyle.css" />
     <Content Include="Web.config" />
@@ -125,6 +130,7 @@
     <Content Include="ViewProfile.aspx" />
     <Content Include="WebForm1Style.css" />
     <Content Include="Request.aspx" />
+    <Content Include="Notifications.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Blog.aspx.cs">
@@ -133,6 +139,13 @@
     </Compile>
     <Compile Include="Blog.aspx.designer.cs">
       <DependentUpon>Blog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Chat.aspx.cs">
+      <DependentUpon>Chat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Chat.aspx.designer.cs">
+      <DependentUpon>Chat.aspx</DependentUpon>
     </Compile>
     <Compile Include="EditPage.aspx.cs">
       <DependentUpon>EditPage.aspx</DependentUpon>
@@ -170,13 +183,6 @@
       <DependentUpon>Message.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Settings.aspx.cs">
-      <DependentUpon>Settings.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Settings.aspx.designer.cs">
-      <DependentUpon>Settings.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Signup.aspx.cs">
       <DependentUpon>Signup.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -226,6 +232,13 @@
     <Compile Include="ProfilePage.aspx.designer.cs">
       <DependentUpon>ProfilePage.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Setting.aspx.cs">
+      <DependentUpon>Setting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Setting.aspx.designer.cs">
+      <DependentUpon>Setting.aspx</DependentUpon>
+    </Compile>
     <Compile Include="UploadImage.aspx.cs">
       <DependentUpon>UploadImage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -246,6 +259,13 @@
     </Compile>
     <Compile Include="Request.aspx.designer.cs">
       <DependentUpon>Request.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Notifications.aspx.cs">
+      <DependentUpon>Notifications.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Notifications.aspx.designer.cs">
+      <DependentUpon>Notifications.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

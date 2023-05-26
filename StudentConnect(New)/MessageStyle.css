@@ -43,7 +43,7 @@ body {
     display: flex;
     margin-left: 100px;
     border-radius: 15px;
-    margin-bottom:50px;
+    margin-bottom: 50px;
 }
 
 .leftside {
@@ -58,7 +58,7 @@ body {
 .rightside {
     position: relative;
     flex: 70%;
-    background-color: linen;
+    background-color: white;
     border-radius: 0px 15px 15px 0
 }
 
@@ -83,6 +83,8 @@ body {
     padding: 0 20px;
     border-radius: 15px 0 0 0;
 }
+
+
 
 .userimg {
     position: relative;

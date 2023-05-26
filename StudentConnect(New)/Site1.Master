@@ -66,15 +66,15 @@
                     </li>
 
                     <li>
-                        <a href="Message.aspx">
+                        <a href="Notifications.aspx">
                             <span class="icon"><ion-icon name="newspaper-outline"></ion-icon></span>
-                            <span class="title">Blog</span>
+                            <span class="title">Notifications</span>
                             
                         </a>
                     </li>
                     
                     <li>
-                        <a href="Settings.aspx">
+                        <a href="Setting.aspx">
                             <span class="icon"><ion-icon name="settings-outline"></ion-icon></span>
                             <span class="title">Settings</span>                
                         </a>
@@ -92,7 +92,8 @@
         </div>
          
         <div class="main">
-           <div class="topbar">
+            
+           <div class="topbar"> 
                <div class="toggle">
                    <ion-icon name="grid-outline"></ion-icon>
                </div>
@@ -102,7 +103,11 @@
                        <ion-icon name="search-outline"></ion-icon>
                    </label>                  
                </div>
-               <div class="user">
+               <div class="user-container">
+                   <div class="notification-icon">
+                        <ion-icon name="notifications-outline"></ion-icon>
+                   </div>
+                   <div class="user">
                    <asp:FormView ID="FormView1" runat="server" OnPageIndexChanging="FormView1_PageIndexChanging">
                    <ItemTemplate>     
                         <%--<asp:Image  class="img-fluid" ID="Image1"  width="50" runat="server" ImageUrl='<%# Eval("image") %>' />--%>
@@ -112,6 +117,8 @@
                    
                    <%--<img src="ProfileImage/Pholly.jpg" width="50" />--%>
                </div>
+               </div>
+               
                
            </div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
@@ -143,5 +150,8 @@
         list.forEach((item) => item.addEventListener('mouseover', activeLink));
 
     </script>
+
+
+   
 </body>
 </html>

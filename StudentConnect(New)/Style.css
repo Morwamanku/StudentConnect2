@@ -18,6 +18,8 @@ body{
     overflow-x:auto; 
 }
 
+
+
 .container{
 
     position:relative;
@@ -28,8 +30,10 @@ body{
     position: fixed;
     width: 300px;
     height: 100%;
-    background: #B1797A;
-    border-left: 10px solid #B1797A;
+    /*background: #B1797A;
+    border-left: 10px solid #B1797A;*/
+    background: antiquewhite;
+    border-left: 10px solid antiquewhite;
     transition: 0.5s;
     overflow: hidden;
 }
@@ -69,7 +73,7 @@ body{
         width:100%;
         display:flex;
         text-decoration:none;
-        color:var(--white);
+        color:initial;
     }
 
 
@@ -167,9 +171,18 @@ body{
     cursor:pointer;
 }
 
-.search{
-    position:relative;
-    width:400px;
+.notification-icon {
+    margin-top: 2px;
+    cursor:pointer;
+}
+
+    .notification-icon ion-icon {
+        font-size: 33px
+    }
+
+.search {
+    position: relative;
+    width: 400px;
     margin: 0 10px;
 }
 
@@ -199,15 +212,20 @@ body{
 
     }
 
-    .user{
-        position:relative;
-        width:40px;
-        height:40px;
-        border: 3px solid var(--back2);
-        border-radius:50px;
-        overflow:hidden;
-        cursor:pointer;
-    }
+.user-container {
+    position: relative;
+    display:flex;
+}
+
+.user {
+    position:relative;
+    width: 40px;
+    height: 40px;
+    border: 2.5px solid black;
+    border-radius: 50px;
+    overflow: hidden;
+    cursor: pointer;
+}
 
     .user img{
         position:absolute;
@@ -230,9 +248,11 @@ body{
 }
 
     .cardbox .card {
+        
         background: var(--white);
-        padding: 0px 70px 75px 0px;
-        border-radius: 20px;
+        padding: 0px 150px 150px 0px;
+        max-width:275px;
+        border-radius: 15px;
         display: flex;
         box-shadow: 0 7px 25px rgba(0,0,0,0.125);
         justify-content: space-between;
@@ -241,7 +261,7 @@ body{
         .cardbox .card .back-card {
             position: absolute;
             background-image: url();
-            width: 209px;
+            width: 275px;
             height: 80px;
             border-radius: 15px 10px 0px 0px;
             object-fit: cover;
@@ -261,14 +281,15 @@ body{
             }
 .image {
     position: relative;
-    width: 80px;
-    height: 80px;
-    border: 3px solid var(--back2);
+    width: 110px;
+    height: 110px;
+    border: 3px solid antiquewhite;
     border-radius: 50px;
     overflow: hidden;
     cursor: pointer;
     padding-bottom: 10px;
-    margin-left: 56px;
+    margin-left: 78px;
+    margin-top: 6px;
 }
 
     .image .img-fluid {
@@ -287,15 +308,26 @@ body{
 }
 
 .name {
-    font-weight: 500;
-    color: #907175;
-    padding-left: 10px;
+    text-align: center;
+    color: BLACK;
+    font-weight: 800;
+    padding-left: 98px;
+    display: block;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: -17px;
+    margin-inline-end: 0px;
 }
 
 .course {
     font-weight: 500;
     color: #907175;
-    padding-left: 10px
+    padding-left: 98px;
+    display: block;
+    margin-block-start: 5px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
 
 .buttons {
@@ -308,19 +340,20 @@ body{
     padding: 10px 15px 10px 0px;
 }
     .buttons .Addbtn {
-        position:absolute;
+        position: absolute;
         width: 100%;
         height: 30px;
         border-radius: 40px;
         padding: 5px 110px;
         padding-left: 45px;
-        margin-left:25px;
+        margin-left: 57px;
         outline: none;
         border: 1px solid black;
-        text-align: center; 
+        text-align: center;
         font-weight: bold;
-        color: var(--blue);
-        cursor:pointer;
+        color: initial;
+        cursor: pointer;
+        background: antiquewhite;
     }
 
 
@@ -425,27 +458,115 @@ body{
         box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     }
 
-.card .icon {
+/*.card .icon {
     position: absolute;
     display: block;
-    height: 20px;
+    height: 29px;
     text-align: center;
     color: black;
-    margin-left: 182px;
+    margin-left: 245px;
     margin-top: 6px;
-    background: aliceblue;
+    background: #eee;
     border: 15px;
     border-radius: 50px;
-    width: 20px;
+    width: 29px;
+    padding-top:4px;
 }
 
-    .card .icon ion-icon {
+    .card .icon {
         font-size: 20px;
-    }
+    }*/
+
+.card .icon2 {
+    position: absolute;
+    display: block;
+    height: 29px;
+    text-align: center;
+    color: black;
+    margin-left: 10px;
+    margin-top: 6px;
+    background: #eee;
+    border: 15px;
+    border-radius: 50px;
+    width: 29px;
+    padding-top: 4px;
+}
+
+.card .icon2 i {
+    font-size: 20px;
+}
+
+.card .icon3 {
+    position: absolute;
+    display: block;
+    height: 29px;
+    text-align: center;
+    color: black;
+    margin-left: 42px;
+    margin-top: 6px;
+    background: #eee;
+    border: 15px;
+    border-radius: 50px;
+    width: 29px;
+    padding-top: 4px;
+}
+
+.card .icon3 i {
+    font-size: 20px;
+}
+
+/*.card .back-card i {
+    position:absolute;
+    background-color: #eee;
+    padding: 10px;
+    border-radius: 50%;
+    color: #666;
+    font-size: 13px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+*/
+
+.filter {
+    height: 29px;
+    color: black;
+    margin-left: 55px;
+    margin-top: 6px;
+    background: antiquewhite;
+    border: 15px;
+    border-radius: 5px;
+    width: 80px;
+    padding-top: 4px;
+    padding-left: 10px;
+    display: flex;
+    gap: 7px;
+}
+.notification-container {
+    position: absolute;
+    width: 100%;
+}
+
+.settings-container{
+    position:absolute;
+    width:100%;
+}
+
+
 
 
 @media(max-width:700px) {
+    
 
+    
+}
+
+@media(max-width:750px) {
+
+    .main {
+        
+        width: 100%;
+        
+    }
 
     .cardbox .card {
         padding: 30px 12px;
@@ -454,6 +575,7 @@ body{
     .cardbox {
         flex-direction: column;
     }
+
 }
 
 

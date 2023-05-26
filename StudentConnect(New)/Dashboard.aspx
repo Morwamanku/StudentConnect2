@@ -12,6 +12,7 @@
         });
 
     </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <style>
@@ -77,7 +78,7 @@
     <div class = "scrollmenu">
         <img src="advert.jpeg" />
     </div>
- 
+    <div class="filter"><span>Filter</span><i class="fa fa-filter" ></i></div>
     <div class="cardbox">
         <asp:Repeater ID="DashboardRepeater" runat="server" OnItemCommand="DashboardRepeater_ItemCommand">
         <ItemTemplate>
@@ -86,15 +87,18 @@
       
                     <div class=back-card>
                         <img src="pexels-aleksandar-pasaric-4505907.jpg" />
-                        <span class="icon"><ion-icon name="close-outline"></ion-icon></span>
+                       
+                        <span class="icon2"><i class="fa fa-phone"></i></span>
+                        <span class="icon3"><i class="fa-regular fa-envelope"></i></span>
+                        
                     </div>
                     <div class="carddetails">
                         <div class="image">
                      
-                            <asp:ImageButton ID="Image1" class="img-fluid" runat="server" ImageUrl='<%# Eval("image") %>' Width="77" OnClick="Image1_Click" />
+                            <asp:ImageButton ID="Image1" class="img-fluid" runat="server" ImageUrl='<%# Eval("image") %>' Width="110px" OnClick="Image1_Click" />
                         </div>
                         
-                        <div class="numbers">
+                        <div class="numbers" >
                             <asp:Label ID="StudentNumberLabel" runat="server" Text='<%# Eval("StudentNumber") %>'></asp:Label>
                         </div>
                         <div class="name">
@@ -105,7 +109,7 @@
                         <div class="name">
                           <asp:Label ID="SurnameLabel1" runat="server" Text='<%# Eval("Surname") %>'></asp:Label>  
                         </div>
-                        <div class="course">Computer science</div>
+                        <div class="course"> Computer </div>
                         <div class="buttons">
                             <asp:Button class="Addbtn" ID="Addbutton" runat="server" Text="Connect" OnClick="Addbutton_Click" />
                         </div>
